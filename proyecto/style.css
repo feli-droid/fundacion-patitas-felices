@@ -194,6 +194,7 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 gap: 25px;
 margin-top: 40px;
+justify-content: center;
 
 }
 .card{
@@ -228,7 +229,7 @@ text-align: center;
   gap: 20px;
   grid-template-columns: 1fr;
 }
-#inf{
+.inf{
     font-size: 30px;
 text-decoration: underline;
 text-align: center;
@@ -283,6 +284,11 @@ img:hover {
   gap: 30px;
   padding: 40px;
 }
+@media(max-width:768px){
+  .adopte{
+    grid-template-columns: 1fr;
+  }
+}
 .descripsio {
   background: #88C3E7;
   border-radius: 10px;
@@ -291,6 +297,11 @@ img:hover {
   text-align: left;
   padding-bottom: 20px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: 0.3s ease;
+}
+.descripsio:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
 }
 .descripsio img {
   width: 100%;
@@ -347,7 +358,52 @@ text-decoration:underline;
   font-size: 20px;
 }
 /*final adopta*/
+/*inicio contacto*/
+.form-container {
+    display: flex;
+    flex-direction:column-reverse;
+    min-height: 1100vh;
+    margin: 0;
+}
 
+.form-container h2 {
+    text-align: ;
+    color: #88498F;
+}
+
+.form-container form {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.form-container label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-container, select, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #F7D002;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-containe button:hover {
+    background: #e6c000;
+}
 
 
 
