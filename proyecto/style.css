@@ -7,6 +7,7 @@ body{
     margin: 0px;
     background-color: #b6dad4;
 }
+/*inicio de barra de busqueda*/
 .p1{
     position: sticky;
     top: 0;
@@ -55,16 +56,19 @@ transition: color 0.2s;
     border-radius: 10px;
     padding: 5px;
 }
-
-  .slider{
+/*final de barra de busqueda*/
+/*inicial carrusel*/
+.slider{
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 600px;
     overflow: hidden;
 }
 
 .slide{
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -76,20 +80,17 @@ transition: color 0.2s;
     animation: slider 15s infinite;
 }
 
-
-.s1{ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl-IhbXr0uvb_rajWpPORMsO77xsDKVkXB6g&s"); animation-delay: 0s; }
-.s2{ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREAwY69J9v8z71EIw5wPtpXMk7459UXJBKzg&s"); animation-delay: 5s; }
-.s3{ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkvkG4Ob9tmVTSOUTR3pnydeqDeLxgS2_6ag&s"); animation-delay: 10s; }
-
+.s1{ background-image: url("https://images.unsplash.com/photo-1570824104453-508955ab713e?q=80&w=711&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); animation-delay: 0s; }
+.s2{ background-image: url("https://images.unsplash.com/photo-1600020389909-2bda4d1862cd?q=80&w=890&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); animation-delay: 5s; }
+.s3{ background-image: url("https://images.unsplash.com/photo-1566617947632-6198d642043c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); animation-delay: 10s; }
 
 .slide h1{
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     background: rgba(0,0,0,0.5);
     padding: 10px 20px;
     border-radius: 10px;
 }
-
 
 @keyframes slider{
     0%{ opacity: 0; }
@@ -98,13 +99,14 @@ transition: color 0.2s;
     40%{ opacity: 0; }
     100%{ opacity: 0; }
 }
+/*final de carrusel*/
+/*informacion 1*/
 .Descubre{
     display:flex;
     flex-direction: column;
     justify-content: center;
     background-color: #88C3E7;
     padding: 10px;
-    color:white;
     font-weight: bold;
     border-radius: 30px;
     border:  3px solid #313636;
@@ -133,7 +135,8 @@ text-decoration:underline;
 #T:hover{
     color: #88498F;
 }
-
+/*informacion 1 final*/
+/*informacion 2 inicial*/
 .hace{
     display:flex;
     flex-direction: column;
@@ -183,7 +186,8 @@ transition:color 0.2s;
     background-color: rgb(253, 253, 253);
     color: black;
 }
- /*informacion*/
+/*informacion 2 final*/
+ /*inicio de conozcanos inf */
  
 .contenedor-cards{
 display: grid;
@@ -217,9 +221,7 @@ text-align: center;
     border-radius: 10px;
     padding: 8px;
 }
-
-/*hello*/
-
+/*final de conozcanos inf*/
 /* START GALLERY*/
 .contener {
   display: grid;
@@ -274,5 +276,78 @@ img:hover {
   }
 }
 /* END GALLERY*/
+/*adopta*/
+.adopte {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+.descripsio {
+  background: #88C3E7;
+  border-radius: 10px;
+  border: 5px solid white;
+  overflow: hidden;
+  text-align: left;
+  padding-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.descripsio img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.descripsio h2 {
+   
+  color: #1e3a8a;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.estadono{
+  background-color: red;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 30px;
+  padding: 10px;
+    margin: 10px;
+}
+.estado{
+  background-color: greenyellow;
+   display: flex;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+}
+.estadono button:disabled {
+  background: gray;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.descripsio strong{
+  color:#1e3a8a;
+text-decoration:underline;
+
+}
+.descripsio p {
+  margin: 10px;
+  font-size: 18px;
+}
+.descripsio button {
+  padding: 10px;
+ display:inline-block;
+ color:white;
+  background-color: #007BFF;
+  border-radius: 20px;
+  border: 3px solid white;
+  font-size: 20px;
+}
+/*final adopta*/
+
+
 
 
