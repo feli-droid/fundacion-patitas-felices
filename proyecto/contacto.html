@@ -2,55 +2,57 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Formulario de Contacto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Adopción</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <nav class="p1">
-        <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-design-vector-260nw-2603428127.jpg">
-        <h1>Patitas Felices</h1>
-  <div class="nav">
-  <a href="index.html">inicio</a>
-  <a href="contacto.html">contacto</a>
-  <a href="more of us.html">conozcanos</a>
+    <img src="https://www.shutterstock.com/image-vector/pet-shop-logo-design-vector-260nw-2603428127.jpg">
+    <h1>Patitas Felices</h1>
+<div class="nav">
+<a href="index.html">inicio</a>
+<a href="contacto.html">contacto</a>
+<a href="more of us.html">conozcanos</a>
 <a href="adoptions.html">catalogo de adopcion</a>
-  </div>
-  </nav>
-<div class="form-container">
-    <h2>Contáctanos</h2>
+</div>
+</nav>
+<div class="formulario">
+    <h1>Formulario de Adopción</h1>
 
     <form>
-        <label>Nombre</label>
+        <label>Nombre *</label>
         <input type="text" required>
 
-        <label>Apellidos</label>
+        <label>Apellidos *</label>
         <input type="text" required>
 
-        <label>Ciudad</label>
+        <label>Ciudad *</label>
         <input type="text" required>
 
-        <label>Correo electrónico</label>
+        <label>Correo Electrónico *</label>
         <input type="email" required>
 
-        <label>Teléfono (opcional)</label>
-        <input type="tel">
+        <label>Teléfono *</label>
+        <input type="tel" required>
 
-        <label>Tipo de consulta</label>
+        <label>Tipo de consulta *</label>
         <select required>
-            <option value="">Seleccione una opción</option>
+            <option>Selecciona una opción</option>
             <option>Adopción</option>
             <option>Donación</option>
             <option>Voluntariado</option>
-            <option>Información general</option>
-            <option>Otro</option>
+            <option>Información</option>
         </select>
 
-        <label>Mensaje</label>
-        <textarea rows="5" required></textarea>
+        <label>¿Por qué deseas adoptar? *</label>
+        <textarea rows="4" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Enviar Solicitud</button>
     </form>
 </div>
-
+<footer class="pie_de_pagina">
+  <p>© 2026 Fundación PatitasFelices - TELEFONO:3105447917 -  CORREO ELETRONICO:patitasfelices@gmail.com - DESARROLLADOR:Andres Felipe R.A</p>
+</footer>
 </body>
 </html>
