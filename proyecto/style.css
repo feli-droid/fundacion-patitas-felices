@@ -34,6 +34,7 @@ body{
 padding: 10px;
 border-radius: 20px;
 transition: color 0.2s;
+
 }
 .p1 h1:hover{
     background-color: #007BFF;
@@ -48,7 +49,11 @@ transition: color 0.2s;
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 5px;
     transition: background-color 0.2s;
+
   }
   .nav a:hover{
     background-color: #007BFF;
@@ -426,6 +431,134 @@ flex-direction: column;
   margin-top: 30px;
  text-align: center;
 }
+/*nuestro impacto inicio*/
+.Impacto{
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 40px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  gap:10px;
+  border: 5px solid #1e3a8a;
+}
+.Impacto h1{
+  color: #1e3a8a;
+  font-size: 40px;
+}
+.Impacto p{
+  border-radius: 10px;
+  border:solid #162E3B;
+  padding: 3px;
+}
+.Impacto p:hover{
+  background-color: #1FC0FF;
+border-radius: 10px;
+padding: 5px;
+}
+.resultados{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+
+}
+
+.caja{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius:30px;
+  margin: 20px;
+  border-bottom:5px solid #1e3a8a;
+}
+.caja h3{
+  color:#88498F;
+  font-size: 30px;
+}
+.meses{
+  font-weight: bold;
+}
+.caja:hover{
+  transform: scale(1.09);
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+}
+.fondo{
+  background-color: aliceblue;
+  border-radius: 30px;
+margin:20px;
+border: 5px solid #1e3a8a;
+padding: 10px;
+}
+.fondo h4{
+  font-size: 20px;
+align-self: center;
+}
+.rescate{
+  padding: 10px;
+  width: 94%;
+  background:linear-gradient(to right, #162E3B 70%,#1FC0FF 30%) ;
+  color: white;
+  border-radius: 20px;
+}
+.adoptados{
+  padding: 10px;
+  width: 94%;
+  background:linear-gradient(to right, #162E3B 95%,#1FC0FF 30%) ;
+  color: white;
+  border-radius: 20px;
+}
+.eventos {
+  padding: 10px;
+  width: 94%;
+  background:linear-gradient(to right, #162E3B 30%,#1FC0FF 30%) ;
+  color: white;
+  border-radius: 20px;
+}
+.voluntariado{
+  padding: 10px;
+  width: 94%;
+  background:linear-gradient(to right, #162E3B 45%,#1FC0FF 30%) ;
+  color: white;
+  border-radius: 20px;
+}
+.fin{
+  background-color: aliceblue;
+  margin:20px;
+border: 5px solid #1e3a8a;
+padding: 10px;
+border-radius: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fin p{
+  border-radius: 10px;
+  border:solid #162E3B;
+  padding: 3px;
+}
+.fin p:hover{
+  background-color: #1FC0FF;
+border-radius: 10px;
+padding: 5px;
+}
+.fin button{
+  background-color: black;
+  color: white;
+  width: fit-content;
+  padding: 6px 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+ }
+ .fin button:hover{
+     background-color:#88C3E7;
+     color: black;
+ }
 
 
 
